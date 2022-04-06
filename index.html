@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicker game</title>
+  <link rel="stylesheet" href="nullstyle.css">
+  <link rel="stylesheet" href="game_style.css">
+</head>
+<body>
+
+  <!-- Игровое поле -->
+  <div class="game_field">
+    <div class="time"></div>
+    <div class="textinside"></div>
+    <button type="button" id="button" class="clickbtn"><p class="clicktxt">Click</p></button>
+    <div class="score" id="counter"> </div>
+    <footer class="footer">
+      <div class="record" id="record_place">
+        <span>Рекорд: </span>
+      </div>
+      <button class="restart" id="restart"><p class="refresh">Restart</p></button>
+    </footer>
+  </div>
+  
+
+  <script src="logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* @font-face {
+  font-family: "Barcade";
+  src: url("..clicker/fonts/BarcadeBrawlRegular.ttf");
+  src: local("вє"), url("../fonts/BarcadeBrawlRegular.woff") format("woff"),
+    url("../fonts/BarcadeBrawlRegular.eot") format("eot"),
+    url("../fonts/BarcadeBrawlRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Pixel";
+  src: url("../pixelfont_7.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  color: #fffdfd;
+  font-family: "Pixel";
+}
+
+.clickbtn {
+  font-family: "Pixel";
+  background: #b62a1d;
+  border-radius: 10px;
+  padding: 30px 45px;
+  font-size: 40px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: -2px 4px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.clickbtn:active {
+  box-shadow: inset 2px 5px 1px rgba(0, 0, 0, 0.51);
+}
+
+.game_field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1195px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.textinside,
+.time {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px;
+  height: 180px;
+}
+
+.textinside {
+  display: none;
+}
+
+.score {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  height: 75px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.record {
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #10b90c;
+}
+
+.restart {
+  font-family: "Pixel";
+  margin-left: auto;
+  background: #fff8f3;
+  border-radius: 5px;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #10b90c;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 4px -4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.restart:active {
+  box-shadow: inset 2px 2px 0px rgba(0, 0, 0, 0.51);
+}
+
+.refresh {
+  margin: 0;
+}
+
+.refresh::after {
+  content: url(../Vector.svg);
+  margin-left: 25px;
+}
