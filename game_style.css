@@ -118,6 +118,6 @@ body {
 }
 
 .refresh::after {
-  content: url(enestacy.github.io/clickergame/Vector.svg);
+  content: url(./Vector.svg);
   margin-left: 25px;
 }
